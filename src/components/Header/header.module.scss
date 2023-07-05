@@ -1,0 +1,29 @@
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 150px 10px 150px;
+}
+
+.nav__container {
+    display: flex;
+    align-items: center;
+
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    li {
+        list-style: none;
+        text-transform: uppercase;
+        font-family: "Nunito-Bold";
+        font-weight: 600;
+        padding-right: 30px;
+
+        &:hover {
+            color: blue;
+        }
+    }
+
+
+}
