@@ -7,7 +7,7 @@ const SearchBar = () => (
     <div className={style.searchBar__container}>
         <Input
             size="large"
-            placeholder="large size"
+            placeholder="Recherche par langue"
             suffix={<SearchOutlined />}
         />
     </div>
