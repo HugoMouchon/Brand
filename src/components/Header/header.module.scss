@@ -2,6 +2,12 @@
     display: flex;
     justify-content: space-between;
     padding: 10px 150px 10px 150px;
+    height: 150px;
+    border-bottom: 1px solid #000;
+}
+
+.logo__container {
+    align-self: center;
 }
 
 .nav__container {
