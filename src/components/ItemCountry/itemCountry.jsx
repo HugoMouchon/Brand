@@ -13,7 +13,16 @@ export default function ItemCountry({ country }) {
                 <span className={style.region}>{country.region}</span>
                 <span className={style.countryName}>{country.name.official}</span>
                 <span>Liste des langues parlées :</span>
-                <span>{ }</span>
+                <ul>
+                    {country.languages && (
+                        Object.entries(country.languages).map(([languageCode, languageName]) => (
+                            <li
+                                key={languageCode}>
+                                {languageName}
+                            </li>
+                        ))
+                    )}
+                </ul>
             </div>
             <div>
                 <button
