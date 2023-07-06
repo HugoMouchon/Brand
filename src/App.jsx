@@ -6,32 +6,32 @@ import ListCountry from './components/listCountry/listCountry';
 import { countriesAPI } from './api/countries-api';
 
 function App() {
+  // Le state 'countries' permet de stocker les données des différents pays
   const [countries, setCountries] = useState([]);
 
-  async function fetchFlagsCountry() {
-    const countries = await countriesAPI.fetchAllCountries();
-    const countriesWithFlags = countries.map(country => ({
-      ...country,
-      flag: country.flags.png,
-    }));
-    setCountries(countriesWithFlags);
+  // La fonction 'fetchAllCountries' permet de récupérer les données via la méthode 'fetchAllCountries' implémenter dans la fichier coutries-api et la stock dans une variable.
+  // utilisation du setter afin de mettre à jours le state "countries"
+  async function fetchAllCountries() {
+    const listCountries = await countriesAPI.fetchAllCountries();
+    setCountries(listCountries);
   }
 
+  // Appel de la fonction "fetchAllCountries" au premier rendu du composant App.
   useEffect(() => {
-    fetchFlagsCountry();
+    fetchAllCountries();
   }, [])
 
-  console.log(countries);
-  
+  console.log(countries );
+
   return (
     <div className={style.app__container}>
       <Header />
       <div className={style.app__container__searchbar}>
         <h1 className={style.app__title}>ma super page de recherche</h1>
-        <SearchBar />
+        <SearchBar onChange={''} />
       </div>
       <div className={style.list__container}>
-        <ListCountry />
+        <ListCountry countries={countries}/>
       </div>
     </div>
   );

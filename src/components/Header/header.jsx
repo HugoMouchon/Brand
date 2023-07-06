@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <div className={style.header__container}>
         <div className={style.logo__container}>
-            <img className={style.img} src={logo} alt="" />
+            <img className={style.img} src={logo} alt="logo de l'entreprise Brand" />
         </div>
         <div className={style.nav__container}>
             <a href=""><li>accueil</li></a>
