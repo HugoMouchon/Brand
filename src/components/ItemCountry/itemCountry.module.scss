@@ -57,22 +57,6 @@
     font-size: 12px;
 }
 
-
-.item__btn {
-    width: 150px;
-    height: 35px;
-    border-radius: 8px;
-    border: none;
-    background-color: c.$bg-color-btn;
-    color: c.$color-text-btn;
-    font-weight: 600;   
-}
-
-.item__btn:hover{
-    background-color: c.$bg-color-btn-hover;
-    color: c.$color-text-btn-hover;
-}
-
 .item__list__languages {
     padding-bottom: 30px;
 }

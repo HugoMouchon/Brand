@@ -1,7 +1,8 @@
 import React from 'react';
 import style from './itemCountry.module.scss';
+import ButtonMaps from '../ButtonMaps/buttonMaps';
 
-// Composant ItemCountry représente la card affiché avecl'image les informations comme le continent, le nom du pays, les langues parlées puis à la fin le bouton GoogleMap
+// Composant ItemCountry représente la card affiché avecl'image les informations comme le continent, le nom du pays, les langues parlées puis à la fin le composant bouton qui revoit sur GoogleMap
 export default function ItemCountry({ country }) {
 
     return (
@@ -25,12 +26,7 @@ export default function ItemCountry({ country }) {
                 </div>
             </div>
             <div>
-                <button
-                    className={style.item__btn}
-                    onClick={() => window.open(country.maps.googleMaps, '_blank')}
-                >
-                    Voir sur GoogleMap
-                </button>
+                <ButtonMaps country={country} />
             </div>
         </div>
     )

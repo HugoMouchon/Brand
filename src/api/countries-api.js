@@ -28,7 +28,7 @@ export class countriesAPI {
             const languages = response.data;
             return languages;
         } catch (error) {
-            console.error('Erreur dans la récupération de la liste des pays qui parle cette langue :', error);
+            console.error('Erreur dans la récupération de la liste des pays parlant la même langue :', error);
             return [];
         }
     }
