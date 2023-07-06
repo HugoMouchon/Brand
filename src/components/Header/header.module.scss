@@ -1,9 +1,11 @@
+@use "../../sass/colors" as c;
+
 .header__container {
     display: flex;
     justify-content: space-between;
     padding: 10px 150px 10px 150px;
     height: 150px;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid c.$color-border;
 }
 
 .logo__container {
@@ -16,7 +18,7 @@
 
     a {
         text-decoration: none;
-        color: #000;
+        color: c.$color-nav-text;
     }
 
     li {
@@ -27,7 +29,7 @@
         padding-right: 30px;
 
         &:hover {
-            color: blue;
+            color: c.$color-li-hover;
         }
     }
 
