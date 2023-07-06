@@ -17,7 +17,7 @@
     flex: 3;
     justify-content: center;
     width: 100%;
-    gap: 15px;
+    gap: 25px;
 
     h2 {
         margin: 0;
@@ -48,6 +48,13 @@
     font-size: 20px;
 }
 
+.region {
+    color: rgba(245, 79, 79, 0.74);
+    font-weight: bold;
+    font-size: 12px;
+}
+
+
 .item__btn {
     width: 150px;
     height: 35px;
@@ -55,5 +62,10 @@
     border: none;
     background-color: rgba(245, 79, 79, 0.315);
     color: rgba(245, 79, 79, 0.74);
-    font-weight: 600;
+    font-weight: 600;   
+}
+
+.item__btn:hover{
+    background-color: rgba(245, 79, 79, 0.884);
+    color: #fff;
 }

@@ -10,13 +10,16 @@ export default function ItemCountry({ country }) {
                 <img className={style.img} src={country.flags.png} alt={country.flags.alt} />
             </div>
             <div className={style.item__informations}>
-                <span>{country.region}</span>
+                <span className={style.region}>{country.region}</span>
                 <span className={style.countryName}>{country.name.official}</span>
                 <span>Liste des langues parlées :</span>
-                <span>{}</span>
+                <span>{ }</span>
             </div>
-            <div className={style.item__btn__container}>
-                <button className={style.item__btn}>
+            <div>
+                <button
+                    className={style.item__btn}
+                    onClick={() => window.open(country.maps.googleMaps, '_blank')}
+                >
                     Voir sur GoogleMap
                 </button>
             </div>
