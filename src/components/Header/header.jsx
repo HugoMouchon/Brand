@@ -3,7 +3,7 @@ import style from './header.module.scss';
 import logo from '../../assets/images/logo.svg';
 
 // composant Header avec le logo et la navigation
-export default function Header({ onSearchByLanguage }) {
+export default function Header() {
 
   return (
     <div className={style.header__container}>

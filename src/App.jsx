@@ -6,7 +6,6 @@ import ListCountry from './components/listCountry/listCountry';
 import { countriesAPI } from './api/countries-api';
 
 function App() {
-
   // Le state 'countries' permet de stocker les données des différents pays
   const [allCountries, setAllCountries] = useState([]);
   // Le state 'listCountriesLanguage' permet de stocker la liste des pays qui parle une langue défini
@@ -52,7 +51,6 @@ function App() {
         <SearchBar onChange={handleSearchLanguage} />
       </div>
       <div className={style.list__container}>
-
         <ListCountry
           //utilisation d'un ternaire afin d'afficher par defaut tous les pays, sinon si elle existe, la liste des pays triée par leur langues.
           allCountries={listCountriesLanguage.length > 0 ? listCountriesLanguage : allCountries}
